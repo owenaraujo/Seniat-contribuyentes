@@ -1,0 +1,61 @@
+
+   <div class="row">
+<div class="col-1"></div>
+
+    <div class="col-4">
+<div class="">
+    <div id="options" class="">
+        <div class="text-center">
+            <button onclick="registrar()" class="btn  btn-primary ">Registrar</button>
+            <button class="btn btn-success " onclick="Recuperar()">¿olvidó su contraseña? </button>
+        </div>
+    </div>
+</div>        
+<div class="row">
+    <div class="container">
+        
+    </div>
+</div>
+</div>
+<div class="col-2"></div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header"><h1 class=" h3 text-center">inicio de session</h1></div>
+            <div class="card-body">
+                <form action="/signin" method="POST">
+                    <!--Body-->
+                    <div class="">
+                        <div class="md-form ">
+                            <i class="fas fa-user prefix"></i>
+                            <input required autocomplete="off" type="text"
+                                id="modalLRInput10"
+                                name="username"
+                                class="form-control  validate">
+                            <label data-error="wrong" data-success="right"
+                                for="modalLRInput10">Ingrese su Usuario</label>
+                        </div>
+                        <!-- <label id="msgUser"></label> -->
+        
+                        <div class=" md-form">
+                            <i class="fas fa-lock prefix"></i>
+                            <input required autocomplete="off" type="password"
+                                name="password" id="modalLRInput11"
+                                class="form-control validate">
+                            <label data-error="wrong" data-success="right"
+                                for="modalLRInput11">Ingrese su Contraseña</label>
+                        </div>
+                        <div class="text-center ">
+                            <button class="btn btn-info">INICIAR SESSION <i
+                                    class="fas fa-check-circle "></i></button>
+                        </div>
+                    
+        
+        </form>
+            </div>
+        </div>
+    </div>
+<div class="col-1"></div>
+    
+   </div>
+
+<script src="/main.js"></script>

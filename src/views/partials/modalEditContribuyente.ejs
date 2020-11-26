@@ -1,0 +1,61 @@
+<!-- Central Modal Small -->
+<div
+  class="modal show d-none right"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+  id="modaleditOculto"
+>
+  <!-- Change class .modal-sm to change the size of the modal -->
+  <div
+    class="modal-dialog modal-full-height modal-right modal-notify"
+    role="document"
+  >
+    <div class="modal-content">
+      <div class="modal-header blue text-white">
+        <h4 class="modal-title w-100" id="myModalLabel">
+          Edición de contribuyente
+        </h4>
+        <button type="button" class="close" id="btnX">
+          <span class="text-white" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="formContribuyente">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-group" class="card">
+                <form id="formcontribuyentes-edit" action="">
+                  <div class="row mx-1">
+                    <input
+                      value=""
+                      autocomplete="off"
+                      class="form-control mb-2 col-8 mx-2"
+                      type="text"
+                      id="rif_edit"
+                      placeholder="rif"
+                    />
+                  </div>
+                  <input
+                    value=""
+                    autocomplete="off"
+                    class="form-control mb-2"
+                    type="text"
+                    id="contribuyente_edit"
+                    placeholder="contribuyente"
+                  />
+                </form>
+                <div class="text-center" id="boton-edit">
+                  <input class="btn btn-warning" type="reset" value="Reset" />
+                  <button id="btnEdit" class="btn btn-blue">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Central Modal Small -->

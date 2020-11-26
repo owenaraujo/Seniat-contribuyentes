@@ -1,0 +1,165 @@
+<!-- Central Modal Small -->
+<div
+  class="modal show bottom d-none"
+  id="modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <!-- Change class .modal-sm to change the size of the modal -->
+  <div class="container-fluid pt-2">
+    <div class="modal-dialog-srcollable modal-bottom" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-header blue  text-white ">
+          <h1 class="h1 ">Informacion de visitas</h1>
+        </div>
+          <div class="px-2">
+            <div class="row">
+              <!-- formulario  -->
+              <div class="col-4 pt-2 pb-2">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="form-group" class="card">
+                      <form id="formData" action="">
+                        <div class="d-none" id="div_contribuyente"></div>
+                        <select class="form-control custom-select mb-2" id="tipo_consulta">
+                          <option selected disabled value="">
+                           tipo de consulta
+                          </option>
+                          <option value="PN">PN</option>
+                          <option value="PG">PG</option>
+                        </select>
+                        
+                        <input
+                          class="form-control mb-2"
+                          type="text"
+                          id="motivo"
+                          placeholder="motivo"
+                        />
+                        <textarea
+                          class="form-control mb-2"
+                          type="text"
+                          id="detalles"
+                          placeholder="detalles"
+                        /></textarea>
+                        <textarea 
+                        class="form-control mb-2"
+                        type="text"
+                        id="observaciones"
+                        placeholder="observaciones"
+                      /></textarea>
+
+                        <div class="text-center">
+                  <input class="btn btn-warning" type="reset" value="Reset" />
+
+                          <button id="registrarVisita" class="btn btn-blue">
+                            registrar
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- formulario  -->
+              <div class="col-8 pt-2">
+                <div class="row">
+                  <!-- search -->
+                  <div class="col-5">
+                    <div class="row">
+                      <input
+                        class="form-control col-8 text-center"
+                        type="date"
+                        placeholder="search"
+                      />
+                      <div class="caja-search bg-primary c-hand mx-2">
+
+                        <i class="fas fa-search "></i>
+
+                      </div>
+                      <!-- <button class="btn btn-sm btn-primary col-3">s</button> -->
+                    </div>
+                    <!-- <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">visita seleccionada</h5>
+                        <p class="card-text">informacion acerca de la vista</p>
+                        <a class="card-link">cerrar</a>
+                        
+                      </div>
+                    </div> -->
+                  </div>
+                  <!-- search  -->
+                  <div id="" class="col-7">
+                    <div class="card text-center">
+                      <div class="" id="modalInfoContribuyente">
+
+                      </div>
+                          
+                              <div class="card-text">
+                                <span  id="InfoParroquia"></span>
+                               /
+                                <span id="InfoMunicipio"></span>
+                                /
+                                <span id="InfoEstado"></span>
+  
+                              </div>
+                            
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 pt-2">
+                    <div class="list-scroll">
+                      <div class="card">
+                        <table
+                          class="table table-hover table-sm text-center text-capitalize"
+                        >
+                          <thead class="card-header">
+                            <tr>
+                              <th>N°</th>
+                              <th>motivo</th>
+                              <th>detalles</th>
+                              <th>fecha</th>
+                              <th>acciones</th>
+                            </tr>
+                          </thead>
+                          <tbody class="card-body" id="visitas"></tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <table
+                    class="col-12 table table-hover table-sm text-center text-capitalize"
+                  >
+                    <TFoot class="card-footer">
+                      <th>N°</th>
+                      <th>motivo</th>
+                      <th>detalles</th>
+                      <th>fecha</th>
+                      <th>acciones</th>
+                    </TFoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer -->
+          <div class="modal-footer">
+            <button
+              id="btnCerrar"
+              class="btn btn-primary btn-sm"
+              onclick="cerrarModal()"
+            >
+              cerrar
+            </button>
+          </div>
+          <!-- footer -->
+        </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+<!-- Central Modal Small -->
